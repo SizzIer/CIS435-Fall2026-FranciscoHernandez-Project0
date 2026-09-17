@@ -22,7 +22,11 @@
         </nav>
     </header>
 
-    <main>
+<main>
+    <section id="about">
+        <h2>Welcome to Victoria Island</h2>
+
+        <article>
             <h3>Begin Your Adventure</h3>
 
             <p>
@@ -38,7 +42,103 @@
                 alt="Map of Victoria Island"
                 class="destination-image"
             >
-    </main>
+        </article>
+    </section>
+
+    <section id="packages">
+        <h2>Travel Packages</h2>
+
+        <p>
+            Choose the perfect Victoria Island adventure for your next trip.
+            Each package offers a unique way to explore the island.
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Package</th>
+                    <th>Duration</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Henesys Getaway</td>
+                    <td>3 Days</td>
+                    <td>50,000 Mesos</td>
+                </tr>
+
+                <tr>
+                    <td>Ellinia Adventure</td>
+                    <td>5 Days</td>
+                    <td>85,000 Mesos</td>
+                </tr>
+
+                <tr>
+                    <td>Victoria Island Grand Tour</td>
+                    <td>7 Days</td>
+                    <td>150,000 Mesos</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Plan Your Adventure</h2>
+
+        <p>
+            Ready to visit Victoria Island? Fill out the form below
+            and choose the adventure that interests you.
+        </p>
+
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="package">Travel Package:</label>
+
+                <select id="package" name="package">
+                    <option value="">Select a package</option>
+                    <option value="henesys">Henesys Getaway</option>
+                    <option value="ellinia">Ellinia Adventure</option>
+                    <option value="grand-tour">Victoria Island Grand Tour</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Comments:</label>
+
+                <textarea
+                    id="comments"
+                    name="comments"
+                    rows="5"
+                    placeholder="Tell us about your adventure plans..."
+                ></textarea>
+            </div>
+
+            <button type="submit">Send Inquiry</button>
+        </form>
+    </section>     
+</main>
 
     <footer>
         <p>&copy; 2026 Visit Victoria Island</p>
