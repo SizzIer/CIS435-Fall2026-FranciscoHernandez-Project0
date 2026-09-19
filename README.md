@@ -15,12 +15,12 @@ The website was created using HTML and CSS and demonstrates semantic HTML, CSS G
 
 ### Desktop View
 
-![Desktop View](project1/screenshots/desktop.png)
+![Desktop View](Project1/screenshots/desktop.png)
 
 ### Tablet View
 
-![Tablet View](project1/screenshots/tablet.png)
+![Tablet View](Project1/screenshots/tablet.png)
 
 ### Mobile View
 
-![Mobile View](project1/screenshots/mobile.png)
+![Mobile View](Project1/screenshots/mobile.png)
