@@ -18,8 +18,14 @@ body {
     line-height: 1.6;
 }
 
-header {
-    background-color: var(--primary-color);
+header {  
+    background: linear-gradient(
+        to bottom,
+        var(--primary-color),
+        #76b7df
+    );
+
+    color: white;
     text-align: center;
     padding: calc(var(--spacing) * 2);
 }
@@ -27,6 +33,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 2.5rem;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25); /* Adding a subtle shadow for better readability (AI) */ 
 }
 
 header p {
@@ -155,3 +162,78 @@ button {
 button:hover {
     opacity: 0.8;
 }
+
+/* Large screens */
+
+@media (min-width: 1024px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #about {
+        grid-column: 1 / -1;
+    }
+}
+
+/*Tablet screens */
+@media (min-width: 769px) and (max-width: 1023px) {
+    main {
+        grid-template-columns: 1fr;
+        padding: calc(var(--spacing) * 1.5);
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        padding: var(--spacing);
+    }
+
+    header {
+        padding: var(--spacing);
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    section {
+        padding: var(--spacing);
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    th,
+    td {
+        padding: 0.5rem;
+    }
+}
+
+/* improving the section headings */
+#about {
+    border-top: 6px solid var(--primary-color);
+}
+
+#packages {
+    border-top: 6px solid var(--accent-color);
+}
+
+#contact {
+    border-top: 6px solid var(--primary-color);
+}   
