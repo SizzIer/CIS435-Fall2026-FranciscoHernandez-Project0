@@ -10,12 +10,17 @@
     box-sizing: border-box;
 }
 
+/* Grid layout keeps the header at the top, main content in the center, and footer at the bottom */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: var(--text-color);
     background-color: var(--secondary-color);
     line-height: 1.6;
+
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 header {  
