@@ -1,0 +1,184 @@
+
+/* Main Application */
+
+#root {
+  width: 100%;
+}
+
+.app {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.app h1 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #1e293b;
+}
+
+.app > p {
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+/* Contact Form */
+
+.app section {
+  margin-bottom: 30px;
+}
+
+.app section h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+form label,
+.search-bar label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background-color: white;
+  color: #1e293b;
+}
+
+input:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+  border-color: #2563eb;
+}
+
+form button {
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+form button:hover {
+  background-color: #1d4ed8;
+}
+
+form p[role="alert"] {
+  color: #b91c1c;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Search Bar */
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search-bar input {
+  margin-top: 5px;
+}
+
+/* Contact List */
+
+.contact-list {
+  margin-top: 30px;
+}
+
+.contact-item {
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.contact-item h3 {
+  margin: 0 0 10px;
+  color: #1e293b;
+}
+
+.contact-item p {
+  margin: 6px 0;
+  color: #475569;
+  overflow-wrap: anywhere;
+}
+
+.contact-item button {
+  margin-top: 12px;
+  padding: 9px 16px;
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.contact-item button:hover {
+  background-color: #fecaca;
+}
+
+/* Keyboard Accessibility */
+
+button:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+}
+
+/* Tablet Screens */
+
+@media (max-width: 768px) {
+  .app {
+    margin: 20px;
+    padding: 24px;
+  }
+
+  form {
+    padding: 18px;
+  }
+}
+
+/* Mobile Screens */
+
+@media (max-width: 480px) {
+  .app {
+    margin: 10px;
+    padding: 16px;
+  }
+
+  .app h1 {
+    font-size: 26px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  .contact-item {
+    padding: 15px;
+  }
+
+  .contact-item button {
+    width: 100%;
+  }
+}
