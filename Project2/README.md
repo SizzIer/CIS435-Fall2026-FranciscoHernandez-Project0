@@ -1,16 +1,35 @@
-# React + Vite
+Simple Contact Book — CIS 435 Project 2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Description
+A simple React application that allows users to manage their contacts. Users can add, view, search, and delete contacts.
 
-Currently, two official plugins are available:
+Features
+Add contacts with name, email, and optional phone number
+View all saved contacts
+Search contacts by name or email
+Delete individual contacts
+Form validation for required fields and email format
+Responsive layout for desktop, tablet, and mobile
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Technologies Used
+React
+JavaScript
+Vite
+HTML/CSS
 
-## React Compiler
+Running the Project
+Open a terminal inside the Project2 folder.
+Run npm install.
+Run npm run dev.
+Open the local URL displayed in the terminal.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Screenshots
 
-## Expanding the ESLint configuration
+Desktop
+![Project2/project2Desktop.png](screenshots/project2Desktop.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Tablet
+![Project2/project2Tabletview.png](screenshots/project2Tabletview.png)
+
+Mobile
+![Project2/project2PhoneView.png](screenshots/project2PhoneView.png)
