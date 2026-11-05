@@ -5,6 +5,6 @@
         "description": "Continue working on TaskPad",
         "priority": "High",
         "due": "2026-11-05",
-        "completed": false
+        "completed": true
     }
 ]

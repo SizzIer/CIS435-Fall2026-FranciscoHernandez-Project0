@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require_once __DIR__ . '/../src/storage.php';
 
 $pageTitle = 'TaskPad PHP';
@@ -15,7 +15,9 @@ function e(?string $value): string
 
 // Load all tasks
 $tasks = loadTasks();
+$flash = $_SESSION['flash'] ?? null;
 
+unset($_SESSION['flash']);
 // Read filters from query string
 $query = trim($_GET['q'] ?? '');
 $priority = trim($_GET['priority'] ?? '');
@@ -99,8 +101,15 @@ $matchingCount = count($filteredTasks);
 
         <h2>My Tasks</h2>
 
+        <?php if ($flash !== null): ?>
+            <p>
+                <?= e($flash) ?>
+            </p>
+        <?php endif; ?>
+
         <!-- Task Counts -->
         <section>
+
             <h3>Task Summary</h3>
 
             <p>Total: <?= $totalCount ?></p>
