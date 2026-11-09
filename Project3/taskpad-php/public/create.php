@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 require_once __DIR__ . '/../src/storage.php';
 require_once __DIR__ . '/../src/validation.php';
 
@@ -49,8 +50,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $tasks[] = $task;
 
         if (saveTasks($tasks)) {
-            // Redirect to prevent duplicate form submissions
-            header('Location: index.php');
+        $_SESSION['flash'] = 'Task created successfully.';           
+        header('Location: index.php');
             exit;
         } else {
             $errors['general'] = 'Unable to save the task. Please try again.';
