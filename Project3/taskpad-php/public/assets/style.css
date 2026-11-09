@@ -1,0 +1,234 @@
+:root {
+    font-family: sysetm-ui, -apple-system, Segoe UI, sans-serif;
+    color: #1f2937;
+    background: #f5f7fb;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin : 0;
+}
+
+header {
+    background: #172b4d;
+    color: white;
+    padding: 1.1rem max(1rem, calc((100vw - 1000px) / 2));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+    nav {
+        display: flex;
+        gap: 1rem;
+    }
+
+    nav a {
+        color:white;
+        font-weight: 600;
+    }
+
+    main {
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 0 1rem 3rem;
+    }
+
+    h2 {
+        font-size: 1.8rem
+    }
+
+    section,
+    main > form {
+        background: white;
+        padding: 1.4rem;
+        border: 1px solid #dfe4ed;
+        border-radius: 12px;
+        margin: 1.25rem 0;
+        box-shadow: 0 3px 14px #1c34510b;
+    }
+
+    main > form {
+        max-width: 680px;
+    }
+
+    main > div {
+        margin-bottom: 1rem;
+    }
+
+    label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: .35rem;
+    }
+
+    input,
+    select,
+    textarea {
+        font: inherit;
+        max-width: 100%;
+        width: 100%;
+        padding: .7rem;
+        border: 1px solid #a8b3c4;
+        border-radius: 7px;
+        background: white;
+    }
+
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible,
+    button:focus-visible,
+    a:focus-visible {
+        outline: 3px solid #ffbf47;
+        outline-offset: 2px;
+    }
+
+    button {
+        font: inherit;
+        cursor: pointer;
+        color: white;
+        border: 0;
+        border-radius: 7px;
+        padding: .65rem 1.1rem;
+        font-weight: 600;
+    }
+
+    button:hover {
+        background: #153d7a;
+    }
+
+    a {
+        color: #1752a5;
+    }
+
+    section form[method=GET] {
+        display: grid;
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) auto auto;
+        align-items: end;
+        gap: .8rem;
+    }
+
+    section form[method=GET] > div {
+        padding: .7rem 0;
+    }
+
+    section form [method=GET] a {
+        padding: .7rem 0;
+    }
+
+    article {
+        border: 1px solid #dce3ed;
+        background: #fbfcff;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    article h4 {
+        font-size: 1.2rem;
+        margin: .1rem 0 .5rem;
+    }
+
+    article p {
+        margin: .45rem 0;
+    }
+
+    article p:has(strong) {
+        padding: .15rem 0;
+    }
+
+    article p strong {
+        color: #334155;
+    }
+
+    article > div {
+        display: flex;
+        gap: .6rem;
+        flex-wrap: wrap;
+        margin-top: .8rem;
+    }
+
+    article > div form {
+        margin: 0;
+    }
+
+    article > div form:last-child button {
+        background: #a52a32;
+    }
+
+    article > div form:last-child button:hover {
+        background: #812027;
+    }
+
+    section > p {
+        margin: .45rem 0;
+    }
+
+    main > p:first-of-type {
+        padding: .8rem 1 rem;
+        background: #e7f7e9;
+        border: 1px solid #9bd6a4;
+        border-radius: 8px;
+    }
+
+    form p {
+        color: #9f1d2c;
+        font-weight: 600;
+        font-size: .92rem;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    section article p:nth-of-type(2),
+    section article p:nth-of-type(3) {
+        display: inline-block;
+        margin-right: .65rem;
+        padding: .3rem .65rem;
+        background: #e7eefc;
+        border-radius: 999px;
+        font-size: .92rem;
+    }
+
+    section article p:nth-of-type(3) {
+        background: #e6f5ec;
+    }
+
+    @media (max-width: 650px) {
+        header {
+            align-items: flex-start;
+        }
+
+        main {
+            margin: 1rem auto;
+        }
+
+        section,
+        main > form {
+            padding: 1rem;
+        }
+
+        section form[method=GET] {
+            grid-template-columns: 1fr;
+        }
+
+        section form[method=GET] button {
+            width: 100%;
+        }
+
+        article > div button {
+            min-height: 44px;
+        }
+    }

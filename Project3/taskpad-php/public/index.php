@@ -84,6 +84,7 @@ $matchingCount = count($filteredTasks);
     >
 
     <title><?= e($pageTitle) ?></title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
