@@ -1,10 +1,26 @@
 [
     {
-        "id": "6aecc306ce827",
-        "title": "Finish Project 3",
-        "description": "Continue working on TaskPad",
-        "priority": "High",
-        "due": "2026-11-05",
-        "completed": true
+        "id": "6af32e42ca7d9",
+        "title": "Finish Mobile",
+        "description": "",
+        "priority": "Low",
+        "due": "2027-10-20",
+        "completed": false
+    },
+    {
+        "id": "6af32e52c8edc",
+        "title": "Hi",
+        "description": "",
+        "priority": "Medium",
+        "due": null,
+        "completed": false
+    },
+    {
+        "id": "6af32f0aded86",
+        "title": "Work on tablet website layout",
+        "description": "coding and testing required for project tablet layout",
+        "priority": "Medium",
+        "due": "2028-10-20",
+        "completed": false
     }
 ]
