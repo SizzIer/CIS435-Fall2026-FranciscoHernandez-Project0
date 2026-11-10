@@ -1,0 +1,23 @@
+@startuml
+
+title Use Case Diagram
+
+left to right direction
+
+actor "User" as User
+
+rectangle "PHP System" {
+  usecase "Create tasks" as Create
+  usecase "Lists tasks" as List
+  usecase "Filter tasks" as Filter
+  usecase "Complete tasks" as Complete
+  usecase "Delete tasks" as Delete
+}
+
+User --> Create
+User --> List
+User --> Filter
+User --> Complete
+User --> Delete
+
+@enduml
