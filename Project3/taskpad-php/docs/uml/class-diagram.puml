@@ -1,0 +1,41 @@
+@startuml
+
+title TaskPad PHP - Class Diagram
+
+class Task {
+    - id : string
+    - title : string
+    - description : string
+    - priority : string
+    - due : string|null
+    - completed : bool
+}
+
+class TaskRepository {
+    - path : string
+    + all() : Task[]
+    + save(tasks : Task[]) : bool
+    + add(task : Task) : void
+    + update(task : Task) : void
+    + delete(id : string) : void
+}
+
+class Validator {
+    + validateTask(input : array) : array
+    + validateDate(date : string) : bool
+}
+
+class TaskController {
+    - repository : TaskRepository
+    - validator : Validator
+    + list(query : array) : void
+    + create(input : array) : void
+    + complete(id : string) : void
+    + delete(id : string) : void
+}
+
+TaskRepository "1" o-- "*" Task
+TaskController --> TaskRepository
+TaskController --> Validator
+
+@enduml
